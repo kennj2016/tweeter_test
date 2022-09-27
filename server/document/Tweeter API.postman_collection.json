@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "ef9f03dc-34b2-480f-b698-8f1754332640",
+		"name": "Tweeter API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "max@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{HOST}}/{{API}}/auth/login",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"{{API}}",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "content",
+			"item": [
+				{
+					"name": "create-tweet",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOjEsImlhdCI6MTY2NDIwNjk0MSwiZXhwIjoxNjY1MDcwOTQxfQ.baoyYtmnvbgimCWJG1HI4U8e-Mj9PymBlEzNCuwSoVU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{HOST}}/{{API}}/content/create-tweet",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"{{API}}",
+								"content",
+								"create-tweet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list-tweets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}/{{API}}/content/list-tweets",
+							"host": [
+								"{{HOST}}"
+							],
+							"path": [
+								"{{API}}",
+								"content",
+								"list-tweets"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

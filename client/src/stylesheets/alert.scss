@@ -1,0 +1,56 @@
+.swal2-title{
+      font-size: 17px !important;
+      color: #000;
+      font-weight: 400;
+      font-family: var(--main-font-family)
+}
+.swal2-toast .swal2-icon{
+      border: 2px solid #e7515a ;
+      border-radius: 50%;
+}
+.swal2-icon-content svg{
+      width: 14px;
+      height: 14px;
+      font-weight: 400;
+}
+
+.swal2-styled.swal2-confirm{
+      background: var(--button-background-color);
+      color: #fff;
+      font-weight: 500;
+      height: 40px;
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+      width: 200px;
+}
+
+@media screen and (min-width: 1600px){
+      .swal2-title{
+            font-size: 24px !important;
+      }
+      .swal2-icon-content svg{
+            width: 20px;
+            height: 20px;
+            font-weight: 400;
+      }
+
+      .swal2-container {
+            width: 700px !important;
+      }
+}
+
+@media screen and (min-width: 1920px){
+      .swal2-title{
+            font-size: 30px !important;
+      }
+      .swal2-icon-content svg{
+            width: 20px;
+            height: 20px;
+            font-weight: 400;
+      }
+
+      .swal2-container {
+            width: 700px !important;
+      }
+}

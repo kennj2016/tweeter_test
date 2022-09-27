@@ -1,0 +1,28 @@
+.main{
+      font-family: var(--main-font-family);
+      .header-main{
+            text-align: center;
+            .wp-inner{
+                  display: flex;
+                  background: var(--primary-color);
+                  justify-content: center;
+                  align-items: center;
+                  p{
+                        margin-bottom: 0;
+                        padding: 1.5rem;
+                        font-weight: 500;
+
+                        color: #fff;
+                        font-size: 20px;
+                        span{
+                              font-size: 16px;
+                        }
+                  }
+                  button{
+                        border: none;
+                        font-weight: 500;
+                        font-size: 13px;
+                  }
+            }
+      }
+}

@@ -1,0 +1,74 @@
+.tweet-page{
+      width: 80%;
+      margin: 0 auto;
+      font-family: var(--main-font-family);
+      background: #f3f3f3;
+      padding: 3rem;
+
+      .widget{
+            .wd-head{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+
+                  button{
+                        background: var(--primary-color);
+                        color: #fff;
+                        font-weight: 500;
+                  }
+                  .title{
+                        font-weight: 600;
+                        font-size: 26px;
+                        text-transform: uppercase;
+                        color: #000;
+                        margin-bottom: 0;
+
+                  }
+            }
+            .wd-body{
+                  .list-tweets{
+                        margin-top: 5rem;
+                        .title{
+                              display: grid;
+                              grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                              text-align: left;
+                              border-bottom: 1px solid #eee;
+                              margin-bottom: 10px;
+                              p{
+                                    text-transform: uppercase;
+                                    font-weight: 600;
+                                    font-size: 18px;
+
+                                    &.tweet-content{
+                                          grid-column: 2 / 6;
+                                    }
+                              }
+                        }
+                        .value > .item {
+                              display: grid;
+                              grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                              border-bottom: 1px solid #eee;
+                              margin-bottom: 10px;
+                              background: #fff;
+                              padding: 5px;
+                              &:last-child{
+                                    border-bottom: none;
+                              }
+                              > div{
+                                    padding-right: 2rem;
+                                    &:last-child{
+                                          padding-right: 0 !important;
+                                    }
+                                    &.tweet-content{
+                                          grid-column: 2 / 6;
+                                    }
+                                    p{
+                                          font-weight: 500;
+                                          font-size: 16px;
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+}
